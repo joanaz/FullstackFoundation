@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Guessing Game</title>
+		<link rel="stylesheet" type="text/css" href="default.css">
+	</head>
+
+	<body>
+		<input type="text" id="guess" placeholder="Input Number 1 - 100" onkeypress="enterKeyPress(event);"/>
+
+		<div id="submitButton">
+			<button type="button" class="button-default" id="submit" onclick="submitted()">Submit</button>
+		</div>
+
+		<div>
+			<h2 id="answer"></h2>
+		</div>
+
+		<div id="choices">
+			<button type="button" class="choiceButton" id="guess1Box">
+				<h5>Guess #1</h5>
+				<h3 id="guess1">?</h3>
+			</button>
+			<button type="button" class="choiceButton" id="guess2Box">
+				<h5>Guess #2</h5>
+				<h3 id="guess2">?</h3>
+			</button>
+			<button type="button" class="choiceButton" id="guess3Box">
+				<h5>Guess #3</h5>
+				<h3 id="guess3">?</h3>
+			</button>
+			<button type="button" class="choiceButton" id="guess4Box">
+				<h5>Guess #4</h5>
+				<h3 id="guess4">?</h3>
+			</button>
+			<button type="button" class="choiceButton" id="guess5Box">
+				<h5>Guess #5</h5>
+				<h3 id="guess5">?</h3>
+			</button>
+		</div>
+
+		<div id="otherButtons">
+			<button type="button" class="button-default" id="hint" onclick="showHint()">Give me a Hint</button>
+			<button type="button" class="button-default" id="again" onclick="location.reload()">Play Again</button>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+</html>
